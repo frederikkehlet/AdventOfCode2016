@@ -35,6 +35,7 @@ const solve = (instructions): number => {
                     break
                 case 'R':
                     x1 = x1 + 1 >= 2 ? 2 : x1 + 1
+                    break
             }
         })
         x = x1, y = y1
