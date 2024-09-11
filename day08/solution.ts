@@ -24,7 +24,8 @@ readFile('input.txt').then(contents => {
             }
         } 
     })
-    console.log(countLitPixels(grid))
+    console.table(grid) // <-- for part 2, make the font small enough for the entire table to fit the console
+    console.log(countLitPixels(grid)) // <-- for part 1
 })
 
 const createGrid = (h,w) : Array<string> => {
@@ -32,7 +33,7 @@ const createGrid = (h,w) : Array<string> => {
     for (let i = 0; i < h; i++) {
         grid[i] = new Array(w)
         for (let j = 0; j < w; j++) {
-            grid[i][j] = '.'
+            grid[i][j] = ' '
         }
     }
     return grid

@@ -25,6 +25,7 @@ var promises_1 = require("fs/promises");
             }
         }
     });
+    console.table(grid);
     console.log(countLitPixels(grid));
 });
 var createGrid = function (h, w) {
@@ -32,7 +33,7 @@ var createGrid = function (h, w) {
     for (var i = 0; i < h; i++) {
         grid[i] = new Array(w);
         for (var j = 0; j < w; j++) {
-            grid[i][j] = '.';
+            grid[i][j] = ' ';
         }
     }
     return grid;
